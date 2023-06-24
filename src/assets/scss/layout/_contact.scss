@@ -1,0 +1,147 @@
+.contact {
+  background: var(--color-gray-gray-100, #f2f4f7);
+  padding: 80px 0 86px 0;
+
+  display: flex;
+  justify-content: center;
+
+  .wrapper-text {
+    max-width: 435px;
+  }
+
+  &-wrapperTop {
+    margin-bottom: 71px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-titleSection {
+    color: var(--color-gray-gray-500, #667085);
+    font-size: 14px;
+    font-family: $font-heading;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &-title {
+    color: var(--color-gray-gray-900, #101828);
+    font-size: 35px;
+    font-family: $font-text;
+    line-height: 38px;
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  &-text {
+    color: var(--color-gray-gray-600, #475467);
+    font-size: 16px;
+    font-family: $font-heading;
+    line-height: 28px;
+  }
+
+  .contact-wrapperBottom {
+    display: flex;
+
+    .corporation {
+      margin-right: 100px;
+      max-width: 250px;
+
+      &-name {
+        color: var(--color-gray-gray-900, #101828);
+        font-size: 18px;
+        font-family: $font-text;
+        line-height: 22px;
+        margin-bottom: 25px;
+        display: flex;
+
+        img {
+          width: 18px;
+          height: 18px;
+          margin-right: 13px;
+        }
+      }
+
+      &-address {
+        color: var(--color-gray-gray-600, #475467);
+        font-size: 16px;
+        font-family: $font-heading;
+        line-height: 28px;
+        margin-bottom: 12px;
+      }
+
+      &-number {
+        margin-bottom: 11px;
+
+        a {
+          color: var(--color-gray-gray-600, #475467);
+          font-size: 14px;
+          font-family: $font-heading;
+          text-decoration-line: underline;
+        }
+      }
+
+      &-email {
+        a {
+          color: var(--color-gray-gray-600, #475467);
+          font-size: 14px;
+          font-family: $font-heading;
+          text-decoration-line: underline;
+        }
+      }
+    }
+  }
+
+  .wrapper-form {
+    margin-top: -14px;
+
+    input,
+    textarea {
+      background: var(--color-system-white, #fff);
+      width: 905px;
+      color: var(--color-gray-gray-400, #98a2b3);
+      font-size: 14px;
+      font-family: $font-heading;
+      padding: 20px 0 20px 30px;
+      outline: none;
+      border: none;
+      margin-bottom: 24px;
+    }
+
+    .error {
+      border: 1px solid red;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    }
+
+    textarea {
+      height: 150px;
+      resize: none;
+      margin-bottom: 34px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper-submitButton {
+      display: flex;
+      align-items: center;
+    }
+
+    .policy {
+      color: var(--color-gray-gray-500, #667085);
+      font-size: 14px;
+      font-family: $font-heading;
+
+      margin-left: 65px;
+    }
+  }
+
+  .error-message {
+    color: red;
+    font-size: 14px;
+    position: relative;
+    top: -23px;
+    right: -19px;
+  }
+}

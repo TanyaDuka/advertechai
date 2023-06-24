@@ -1,0 +1,10 @@
+form(id="contact-form")
+  input(type="text" name="name" id="name" placeholder="Name")
+  div.error-message#name-error
+  input(type="email" name="email" id="email" placeholder="Email")
+  div.error-message#email-error
+  textarea(name="message" id="message" placeholder="Message")
+  div.wrapper-submitButton
+    button.btn.btn-black.hover-up.icon-arrow-right-white( type="submit") Send Message
+    p.policy
+      | By clicking the "Contact us" button, you agree to our terms and policy.
