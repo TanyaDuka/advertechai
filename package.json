@@ -8,7 +8,8 @@
   "scripts": {
     "build": "rimraf dist && webpack --env mode=development --config ./build/webpack.config.js --progress",
     "dev": "webpack serve --env mode=development --config ./build/webpack.config.js --progress",
-    "prod": "rimraf dist && webpack --env mode=production --config ./build/webpack.config.js --progress"
+    "prod": "rimraf dist && webpack --env mode=production --config ./build/webpack.config.js --progress",
+    "install-force": "npm i --force && npm i --legacy-peer-deps"
   },
   "resolutions": {
     "upath": "1.1.1"
